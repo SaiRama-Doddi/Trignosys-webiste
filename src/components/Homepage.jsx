@@ -10,17 +10,17 @@ const HomePage = () => {
 
   return (
     <section
-      className="h-[90vh] bg-cover bg-center flex items-center text-[#1c6bdd]"
+      className="h-[90vh] sm:h-[80vh] md:h-[90vh] bg-cover bg-center flex items-center"
       style={{
         backgroundImage: `url(${home})`,
       }}
     >
-      <div className="ml-24 max-w-lg">
+      <div className="mx-6 sm:mx-12 md:ml-24 max-w-full sm:max-w-md md:max-w-lg text-left text-[#1c6bdd]">
         
-
+        {/* Subheading animated */}
         <SplitText
-          text=" Effective Strategies For"
-          className="text-2xl font-semibold text-left"
+          text="Effective Strategies For"
+          className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2"
           delay={100}
           duration={0.6}
           ease="power3.out"
@@ -33,10 +33,12 @@ const HomePage = () => {
           onLetterAnimationComplete={handleAnimationComplete}
         />
 
-        <h1 className="text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg">
+        {/* Main Heading */}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg">
           TRAINING & DEVELOPMENT
         </h1>
 
+        {/* CTA Button with animation */}
         <AnimatedContent
           distance={150}
           direction="horizontal"
@@ -49,7 +51,7 @@ const HomePage = () => {
           threshold={0.2}
           delay={0.3}
         >
-          <button className="mt-4 px-8 py-3 bg-[#1c6bdd] text-white font-semibold rounded-full shadow-lg hover:bg-blue-500 transition duration-300">
+          <button className="mt-4 px-6 sm:px-8 py-2 sm:py-3 bg-[#1c6bdd] text-white font-semibold rounded-full shadow-lg hover:bg-blue-500 transition duration-300 text-sm sm:text-base">
             Get Started
           </button>
         </AnimatedContent>
