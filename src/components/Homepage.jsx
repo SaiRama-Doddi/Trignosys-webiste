@@ -10,9 +10,14 @@ const HomePage = () => {
 
   return (
 <section
-  className="relative min-h-[50vh] bg-cover bg-center flex items-center justify-start py-10 sm:py-20"
-  style={{ backgroundImage: `url(${home})` }}
+  className="relative h-[55vh] sm:h-[65vh] md:h-[55vh] lg:h-[55vh] xl:h-[60vh] bg-cover bg-center flex items-center justify-start py-6 sm:py-12"
+  style={{
+    backgroundImage: `url(${home})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+  }}
 >
+
   <div className="absolute inset-0 bg-gradient-to-r from-white/50 to-transparent"></div>
 
   <div className="relative z-10 mx-6 sm:mx-12 md:ml-24 max-w-lg text-left text-[#1c6bdd]">
@@ -52,6 +57,7 @@ const HomePage = () => {
     </AnimatedContent>
   </div>
 </section>
+
 
   );
 };
