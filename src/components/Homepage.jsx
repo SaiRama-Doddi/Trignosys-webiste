@@ -10,11 +10,12 @@ const HomePage = () => {
 
   return (
     <section
-      className="h-[50vh] sm:h-[70vh] md:h-[60vh] bg-cover bg-center flex items-center"
-      style={{
-        backgroundImage: `url(${home})`,
-      }}
-    >
+  className="h-[60vh] sm:h-[70vh] md:h-[60vh] lg:h-[60vh] xl:h-[60vh] bg-cover bg-center flex items-center"
+  style={{
+    backgroundImage: `url(${home})`,
+  }}
+>
+
       <div className="mx-6 sm:mx-12 md:ml-24 max-w-full sm:max-w-md md:max-w-lg text-left text-[#1c6bdd]">
         
         {/* Subheading animated */}
