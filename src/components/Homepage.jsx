@@ -10,7 +10,7 @@ const HomePage = () => {
 
   return (
     <section
-      className="h-[90vh] sm:h-[80vh] md:h-[90vh] bg-cover bg-center flex items-center"
+      className="h-[50vh] sm:h-[70vh] md:h-[60vh] bg-cover bg-center flex items-center"
       style={{
         backgroundImage: `url(${home})`,
       }}
@@ -34,7 +34,7 @@ const HomePage = () => {
         />
 
         {/* Main Heading */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6 drop-shadow-lg">
+        <h1 className="text-2xl sm:text-3xl md:text-3xl font-extrabold leading-tight mb-2 drop-shadow-lg">
           TRAINING & DEVELOPMENT
         </h1>
 
@@ -51,7 +51,7 @@ const HomePage = () => {
           threshold={0.2}
           delay={0.3}
         >
-          <button className="mt-4 px-6 sm:px-8 py-2 sm:py-3 bg-[#1c6bdd] text-white font-semibold rounded-full shadow-lg hover:bg-blue-500 transition duration-300 text-sm sm:text-base">
+          <button className="mt-2 px-6 sm:px-8 py-2 sm:py-2 bg-[#1c6bdd] text-white font-semibold rounded-full shadow-lg hover:bg-blue-500 transition duration-300 text-sm sm:text-base">
             Get Started
           </button>
         </AnimatedContent>
