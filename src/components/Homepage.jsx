@@ -10,7 +10,7 @@ const HomePage = () => {
 
   return (
 <section
-  className="relative min-h-[60vh] bg-cover bg-center flex items-center justify-start py-10 sm:py-20"
+  className="relative min-h-[50vh] bg-cover bg-center flex items-center justify-start py-10 sm:py-20"
   style={{ backgroundImage: `url(${home})` }}
 >
   <div className="absolute inset-0 bg-gradient-to-r from-white/50 to-transparent"></div>
