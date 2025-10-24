@@ -48,7 +48,7 @@ export default function Navbar() {
         >
           {isOpen ? (
             <svg
-              className="w-7 h-7 text-gray-800"
+              className="w-7 h-7 text-[#fff]"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -62,7 +62,7 @@ export default function Navbar() {
             </svg>
           ) : (
             <svg
-              className="w-7 h-7 text-gray-800"
+              className="w-7 h-7 text-[#fff]"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
