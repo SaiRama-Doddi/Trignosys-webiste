@@ -42,10 +42,11 @@ export default function Navbar() {
         </nav>
 
         {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:[#1c6bdd]"
-        >
+     <button
+  onClick={() => setIsOpen(!isOpen)}
+  className="md:hidden p-2 rounded-md bg-transparent border-none focus:outline-none hover:bg-transparent active:bg-transparent"
+>
+
           {isOpen ? (
             <svg
               className="w-7 h-7 text-[#fff]"
