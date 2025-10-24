@@ -1,6 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 
 export default function ContactForm() {
+    const form = useRef();
+      const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_t7zzmsx",   // 🔹 Replace with your Service ID
+        "template_98tzbjj",  // 🔹 Replace with your Template ID
+        form.current,
+        "e4E7gOnFleujWauKP"  // 🔹 Replace with your Public Key
+      )
+      .then(
+        () => {
+          alert("✅ Message sent successfully!");
+          form.current.reset();
+        },
+        (error) => {
+          alert("❌ Failed to send message: " + error.text);
+        }
+      );
+  };
   return (
     <section className="bg-gray-100 py-16" id="contact">
       <div className="container mx-auto px-6 lg:px-12">
@@ -11,7 +33,7 @@ export default function ContactForm() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left side - Contact Form */}
           <div className="bg-white rounded-2xl shadow-md p-8">
-            <form className="space-y-6">
+            <form className="space-y-6" ref={form} onSubmit={sendEmail}>
               {/* Name + Email (side by side on large screens) */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Name */}
