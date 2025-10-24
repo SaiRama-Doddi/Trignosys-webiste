@@ -10,7 +10,7 @@ const HomePage = () => {
 
   return (
     <section
-      className="relative h-[50vh] bg-cover bg-center flex items-center justify-start py-6"
+      className="relative h-[50vh] xl:h-[70vh] bg-cover bg-center flex items-center justify-start py-6"
       style={{
         backgroundImage: `url(${home})`,
         backgroundRepeat: "no-repeat",
@@ -22,7 +22,7 @@ const HomePage = () => {
       <div className="relative z-10 mx-6 sm:mx-12 md:ml-24 max-w-lg text-left text-[#1c6bdd]">
         <SplitText
           text="Effective Strategies For"
-          className="text-lg sm:text-xl md:text-3xl font-semibold"
+          className="text-lg sm:text-xl md:text-3xl font-semibold mt-4"
           delay={100}
           duration={0.6}
           ease="power3.out"

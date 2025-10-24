@@ -128,7 +128,8 @@ const Footer = () => {
             <li className="flex items-start gap-3">
        <FaMapMarkerAlt size={22} className="text-[#fff] mt-1 " />
               <span className="hover:text-[yellow]">
-                49-51-5/1, NMR Buildings, Shankara Matam Road, Beside Fitzee,
+                59-61-3/1, Complex, Dwaraka Nagar, Beside Dr. K. Murali Mohan
+                Hospital,
                 Visakhapatnam - 530016
               </span>
             </li>
