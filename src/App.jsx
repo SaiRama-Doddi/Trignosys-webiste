@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import HomePage from './components/Homepage'
 import Footer from './components/Footer'
+import ContactForm from './components/ContactForm'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,10 @@ function App() {
     <>
        <Navbar/>
        <HomePage/>
-       <Footer/>
+ 
+       <ContactForm/>
+        <Footer/>
+       
        
     </>
   )

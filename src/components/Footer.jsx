@@ -8,7 +8,7 @@ const Footer = () => {
         
         {/* Brand & Description */}
         <div className="flex flex-col items-start lg:max-w-sm">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-2">MyBrand</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-[#1c6bdd]">Trignosys Software Solutions</h2>
           <p className="text-blue-600 text-sm sm:text-base mb-4">
             Crafting modern web experiences with React, Tailwind, and GSAP. Stay connected and explore our services.
           </p>
