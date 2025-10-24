@@ -5,6 +5,7 @@ import HomePage from './components/Homepage'
 import Footer from './components/Footer'
 import ContactForm from './components/ContactForm'
 import AboutSection from './components/AboutSection'
+import ScrollToTopButton from './components/ScrollToTopButton'
 
 function App() {
  
@@ -19,7 +20,7 @@ function App() {
 
         <Footer/>
        
-       
+        <ScrollToTopButton /> 
     </>
   )
 }
