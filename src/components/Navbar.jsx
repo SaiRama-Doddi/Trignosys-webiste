@@ -17,9 +17,9 @@ export default function Navbar() {
         {/* Brand */}
         <a
           href="#home"
-          className="text-3xl font-extrabold tracking-tight text-[#fff] hover:text-indigo-700 transition-colors duration-200"
+          className="text-3xl font-bold tracking-tight text-[#fff] hover:text-indigo-700 transition-colors duration-200"
         >
-         TRIGNOSYS
+         Trignosys
         </a>
 
         {/* Desktop Nav */}
