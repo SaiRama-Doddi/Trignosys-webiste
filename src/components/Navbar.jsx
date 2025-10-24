@@ -93,7 +93,7 @@ export default function Navbar() {
                 }}
                 className={`text-base font-medium transition-colors duration-200 ${
                   active === link.name
-                    ? "text-[#fff] underline underline-offset-4"
+                    ? "text-[#1c6bdd] underline underline-offset-4"
                     : "text-[#fff ] hover:text-[#1c6bdd]"
                 }`}
               >
