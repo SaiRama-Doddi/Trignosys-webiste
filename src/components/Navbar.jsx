@@ -12,12 +12,12 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+    <header className="bg-[#1e3a8a] shadow-md fixed w-full top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Brand */}
         <a
           href="#home"
-          className="text-3xl font-extrabold tracking-tight text-[#1c6bdd] hover:text-indigo-700 transition-colors duration-200"
+          className="text-3xl font-extrabold tracking-tight text-[#fff] hover:text-indigo-700 transition-colors duration-200"
         >
          TRIGNOSYS
         </a>
@@ -32,8 +32,8 @@ export default function Navbar() {
               className={`relative text-lg font-medium transition-colors duration-200 
                 ${
                   active === link.name
-                    ? "text-[#1c6bdd] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#1c6bdd] after:bottom-[-4px] after:left-0"
-                    : "text-gray-700 hover:text-[#1c6bdd]"
+                    ? "text-[#fff] after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-[#fff] after:bottom-[-4px] after:left-0"
+                    : "text-[#fff] hover:text-[yellow]"
                 }`}
             >
               {link.name}
@@ -92,8 +92,8 @@ export default function Navbar() {
                 }}
                 className={`text-base font-medium transition-colors duration-200 ${
                   active === link.name
-                    ? "text-[#1c6bdd] underline underline-offset-4"
-                    : "text-gray-700 hover:text-[#1c6bdd]"
+                    ? "text-[#fff] underline underline-offset-4"
+                    : "text-[#fff ] hover:text-[#1c6bdd]"
                 }`}
               >
                 {link.name}
